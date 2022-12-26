@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class User extends Model
+class Site extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class User extends Model
 
     protected $fillable = [
         'name',
-        'surname'
+        'url'
     ];
 
     public function labels(): BelongsToMany

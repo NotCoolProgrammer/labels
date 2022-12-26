@@ -6,15 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class User extends Model
+class Company extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
 
     protected $fillable = [
-        'name',
-        'surname'
+        'name'
     ];
 
     public function labels(): BelongsToMany
